@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: kavithareddy/terraform-heroku:nodejs
+      - image: kavithareddy/terraform:nodejs
     steps: 
       - checkout 
       - run:  | 
