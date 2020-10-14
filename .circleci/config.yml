@@ -10,4 +10,4 @@ jobs:
          ls
          terraform init 
          terraform plan 
-         terraform apply -auto-aprove 
+         terraform apply -auto-aprove -out=tfplan
