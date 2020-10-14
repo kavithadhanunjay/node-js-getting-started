@@ -8,6 +8,7 @@ jobs:
       - run:  | 
          pwd
          ls
+         cat main.tf
          terraform init 
          terraform plan 
          terraform apply -auto-approve 
