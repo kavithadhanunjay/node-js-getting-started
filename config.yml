@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: kavithareddy/terraform-heroku
+    steps: 
+      - checkout 
+      - run:  | 
+         pwd
+         ls
