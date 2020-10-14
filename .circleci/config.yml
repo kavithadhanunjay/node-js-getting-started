@@ -10,5 +10,6 @@ jobs:
          ls
          cat main.tf
          terraform init 
+         terraform 0.13upgrade --yes 
          terraform plan 
          terraform apply -auto-approve 
