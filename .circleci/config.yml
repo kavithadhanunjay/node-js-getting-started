@@ -2,13 +2,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: kavithareddy/terraform:nodejs
+      - image: kavithareddy/terra:nodejs
     steps: 
       - checkout 
       - run:  | 
-         pwd
-         ls
-         cat main.tf
          terraform init 
          terraform 0.13upgrade --yes 
          terraform plan 
