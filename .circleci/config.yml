@@ -6,6 +6,7 @@ jobs:
     steps: 
       - checkout 
       - run:  | 
+         ls
          cat main.tf
          terraform init 
          terraform 0.13upgrade --yes 
