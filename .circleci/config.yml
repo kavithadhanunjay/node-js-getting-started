@@ -9,8 +9,8 @@ jobs:
          ls
          pwd
          cd ../
-         ls
-         cat main.tf
+         cd terraform ls
+         cat terraform/main.tf
          terraform init 
          terraform 0.13upgrade --yes 
          terraform plan 
