@@ -12,6 +12,7 @@ jobs:
          ls
          ls terraform/
          cat terraform/main.tf
+         pwd
          terraform init 
          terraform 0.13upgrade --yes 
          terraform plan 
