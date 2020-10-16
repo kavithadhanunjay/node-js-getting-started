@@ -13,6 +13,7 @@ jobs:
          cd terraform/
          cat main.tf
          pwd
+         terraform 0.13upgrade .
          terraform init 
          terraform 0.13upgrade --yes 
          terraform plan 
