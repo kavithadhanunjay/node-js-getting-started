@@ -8,8 +8,7 @@ jobs:
       - run:  | 
          ls
          pwd
-         cd ../
-         cd terraform ls
+         ls ../terraform/
          cat terraform/main.tf
          terraform init 
          terraform 0.13upgrade --yes 
