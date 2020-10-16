@@ -7,18 +7,18 @@ provider "heroku" {
 # Create a new application
 # Usage with Local Source Directory
 resource "heroku_app" "nodejsapp" {
-    name = "kavitha-container-nodejs"
+    name = "kavitha-container-nodejs-2"
     region = "us"
     stack = "container"
 }
 
 resource "heroku_build" "nodejsapp" {
-  app = heroku_app.nodejsapp.id
+  app = heroku_app.nodejsapp.id 
+ source = {
+  path = "."
+ }
 
-  source = {
-    path = "."
-  }
-}
+ }
 
 output "web_url" {
   value = heroku_app.nodejsapp.web_url 
